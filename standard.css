@@ -203,3 +203,10 @@ a {
 .w3-row img {
     object-fit: cover;
   } 
+
+  /* Correction de l'affichage de l'image principale pour maintenir son ratio */
+.main-image-fit {
+    width: 100%;       /* Prend toute la largeur disponible */
+    height: auto;      /* Calcule la hauteur proportionnellement à la largeur */
+    object-fit: cover; /* Assure que l'image maintient son ratio et couvre son espace */
+}
