@@ -210,7 +210,7 @@ a {
 /* Définir une hauteur fixe pour le conteneur du lien */
 .w3-row a {
     display: block; /* S'assurer que le lien prend toute la place */
-    height: 250px; /* **ESSAYEZ 250px COMME HAUTEUR FIXE POUR TOUTES LES IMAGES** */
+    height: 280px; /* **ESSAYEZ 280px COMME HAUTEUR FIXE POUR TOUTES LES IMAGES** */
     overflow: hidden; /* Cache tout ce qui dépasse de cette hauteur */
 }
 
@@ -219,4 +219,9 @@ a {
     object-fit: cover;
     height: 100%; /* L'image remplit la hauteur du parent (250px) */
     width: 100%; /* L'image remplit la largeur du parent */
+}
+
+/* Supprimer l'effet d'opacité (blanchiment) au survol */
+.w3-row a:hover img {
+    opacity: 1 !important; /* Force l'opacité à 100% */
 }
