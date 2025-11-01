@@ -199,35 +199,3 @@ img {
 a {
     color: inherit;
 }
-
-
-/* ... (Code W3.CSS et styles H1-H6) ... */
-
-.main-image-fit {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/* ---------------------------------------------------- */
-/* CORRECTION GRILLE FINALE (Une seule version forte)  */
-/* ---------------------------------------------------- */
-
-/* 1. Force la hauteur fixe et l'alignement pour le conteneur du lien */
-.w3-row .w3-half a {
-    display: block !important;
-    height: 280px !important; 
-    overflow: hidden !important; 
-}
-
-/* 2. Force l'image à remplir cet espace sans être étirée */
-.w3-row .w3-half a img {
-    object-fit: cover !important; 
-    height: 100% !important; 
-    width: 100% !important;
-}
-
-/* 3. Écrase tout effet de survol (blanchiment) */
-.w3-row a:hover img {
-    opacity: 1 !important; 
-}
